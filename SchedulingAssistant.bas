@@ -188,7 +188,7 @@ Private Function setConvertedRecipes(ByVal yieldWS As Worksheet, ByRef outputWS 
         Call Tools.hideRows(beginRow, chkCol, lastRow, productionSheet)
 End Function
 
-'Function sets the counts into the Production Schedule from the Scheduleing worksheets. These are the final counts that IKI needs to send to SBT.
+'Function sets the counts into the Production Schedule from the Scheduleing worksheets. These are the final counts that I needs to send to S.
 '   Arg - 'scheduleWS': Worksheet reference to the selected week schedule worksheet
 '   Arg - 'productionSch': Worksheet reference to the production schedule
 Private Function setCounts(ByVal julianCell As Range, ByVal scheduleWS As Worksheet, ByVal productionSch As Workbook)
@@ -207,7 +207,7 @@ Private Function setCounts(ByVal julianCell As Range, ByVal scheduleWS As Worksh
         Call Tools.hideRows(beginRow, chkCol, lastRow, countSheet)
 End Function
 
-'Function to create stock list for SBT Warehouse based off of what is being projected for the selected day's production
+'Function to create stock list for S Warehouse based off of what is being projected for the selected day's production
 '   Arg - 'julianCell': Range reference to the julian number cell associated with the production day
 '   Arg - 'scheduleWS': Worksheet reference to the selected week schedule worksheet
 '   Arg - 'stockWS': Worksheet reference to the stock sheet inside this workbook
