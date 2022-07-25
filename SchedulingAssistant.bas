@@ -56,7 +56,7 @@ Private Function scheduleLine(ByVal orderCell As Range, ByVal produceQty As Inte
     End If
 End Function
 
-'Subroutine to remove IKI extras from a recipe on the schedule
+'Subroutine to remove I extras from a recipe on the schedule
 Sub UseExtra()
 Attribute UseExtra.VB_ProcData.VB_Invoke_Func = "V\n14"
     If Cells(ActiveCell.row, 5).Value = 0 Then 'Check to see if the item is a batch
@@ -76,7 +76,7 @@ Attribute AddOrder.VB_ProcData.VB_Invoke_Func = "X\n14"
     ActiveCell.Value = -(Abs(ActiveCell.Value) + val(addON))
 End Sub
 
-'Subroutine to schedule out production after IKI extras have been included into the recipes
+'Subroutine to schedule out production after I extras have been included into the recipes
 '
 'Instructions:  Please select the julian number for the production schedule inside
 '                   this sheet. You must also have your production sheet open.
